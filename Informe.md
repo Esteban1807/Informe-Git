@@ -97,9 +97,55 @@ Podemos ver como se ha creado el commit con el mensaje "primero" en el cual a re
 
 ![alt text](image-14.png)
 
+#### Logs
+Para ver los logs o registros sencillamente usaremos el comando ```git log``` donde veremos algo asi: 
+
+![alt text](image-15.png)
+
+Si agregamos un nuevo commit o como nos dice en el video, otra foto, veremos esto tambien en los registros 
+
+![alt text](image-16.png)
+
+ Si queremos verlo un poco mas detallado como si fuera una rama usamos ```git log --graph```
+
+![alt text](image-19.png)
+
+vemos como va paso a paso con los *
 
 
+#### Checkout y Reset
+Si hacemos un cambio pero no lo comiteamos 
 
+![alt text](image-17.png)
+
+pero queremos que vuelva a estar como antes podemos usar  
+ ```git checkout nombreArchivo``` 
+
+ ![alt text](image-18.png)
+
+ Si queremos hacer una pequeña navegacion de los cambios que ha habido antes de guardar, podemos usar el ```git reset```
+
+
+#### Alias 
+Podemos usar los alias como atajos
+Para crear uno tenemos que entrar a la configuracion de usuario la cual es con global, lo definimos y entre comillas le agregamos el comando que queremos que ejecute ese alias
+```git config --global alias.nombre "comando git"```
+
+![alt text](image-20.png)
+
+podemos confirmar que se ha creado yendo al fichero de configuracion donde teniamos el usuario y email
+
+![alt text](image-21.png)
+
+Ahora si escribo ```git arbolito``` me va a mostrar lo que dice el comando definido
+
+![alt text](image-22.png)
+
+
+#### Ignore
+Creando un archivo llamado ```.gitignore``` en la ubicacion del repositorio, podremos añadir los ficheros que no queremos añadir a ningun commit, asi cada que escribamos ```git status``` no nos saldra que debemos añadirlo
+
+En el archivo tendremos que escribir ```**/.NombreFichero``` 
 
 
 
